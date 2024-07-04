@@ -1,0 +1,105 @@
+# Copyright (C) 2024 Yukino Song
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#
+# Overlay for OnePlus Pad Pro keyboard to add ESC/Fn keys back.
+# Use with https://github.com/ris58h/exkeymo-web
+#
+
+type OVERLAY
+
+map key 125 BACK               # META_LEFT/AI
+map key 158 ESCAPE             # ESC
+map key 193 FUNCTION           # SEARCH/F23
+
+map key 224 BUTTON_1           # BRIGHTNESS_DOWN
+map key 225 BUTTON_2           # BRIGHTNESS_UP
+map key 183 BUTTON_3           # MIC/F13
+map key 192 BUTTON_4           # TOUCHPAD_OFF/F22
+map key  99 BUTTON_5           # SCREEN_CAPTURE/SYSRQ
+# map key 194 BUTTON_6           # LOCK/F24 - No way to block screen lock
+map key 165 BUTTON_7           # MEDIA_PREVIOUS
+map key 164 BUTTON_8           # MEDIA_PLAY_PAUSE
+map key 163 BUTTON_9           # MEDIA_NEXT
+map key 113 BUTTON_10          # VOLUMT_MUTE
+map key 114 BUTTON_11          # VOLUME_DOWN
+map key 115 BUTTON_12          # VOLUME_UP
+map key 111 BUTTON_13          # DELETE
+
+### REMAP
+
+key BUTTON_1 {
+    base:                               fallback BRIGHTNESS_DOWN
+    ctrl, alt, shift, fn:               fallback F1
+}
+
+key BUTTON_2 {
+    base:                               fallback BRIGHTNESS_UP
+    ctrl, alt, shift, fn:               fallback F2
+}
+
+key BUTTON_3 {
+    base:                               fallback VOICE_ASSIST
+    ctrl, alt, shift, fn:               fallback F3
+}
+
+key BUTTON_4 {
+    base:                               fallback F22
+    ctrl, alt, shift, fn:               fallback F4
+}
+
+key BUTTON_5 {
+    base:                               fallback SYSRQ
+    ctrl, alt, shift, fn:               fallback F5
+}
+
+# key BUTTON_6 {
+#     base:                               fallback POWER
+#     ctrl, alt, shift, fn:               fallback F6
+# }
+
+key BUTTON_7 {
+    base:                               fallback MEDIA_PREVIOUS
+    ctrl, alt, shift, fn:               fallback F6
+}
+
+key BUTTON_8 {
+    base:                               fallback MEDIA_PLAY_PAUSE
+    ctrl, alt, shift, fn:               fallback F7
+}
+
+key BUTTON_9 {
+    base:                               fallback MEDIA_NEXT
+    ctrl, alt, shift, fn:               fallback F8
+}
+
+key BUTTON_10 {
+    base:                               fallback VOLUMT_MUTE
+    ctrl, alt, shift, fn:               fallback F9
+}
+
+key BUTTON_11 {
+    base:                               fallback VOLUMT_DOWN
+    ctrl, alt, shift, fn:               fallback F10
+}
+
+key BUTTON_12 {
+    base:                               fallback VOLUMT_UP
+    ctrl, alt, shift, fn:               fallback F11
+}
+
+key BUTTON_13 {
+    base:                               fallback FORWARD_DEL
+    fn:                                 fallback F12
+}
