@@ -3,6 +3,8 @@ Better OnePlus Pad Pro magnet keyboard key layout
 
 -------
 
+Created with https://github.com/ris58h/exkeymo-web
+
 Tried my best to keep all functions original.
 
 Modifications:
@@ -15,5 +17,7 @@ Brightness to Del are mapped to F1-F12 when pressing Search(FN), except lock scr
 In Moonlight all modifications are working as intended.
 
 This is a non-root solution so it won't work in apps that handles the replacing keys or listens to all keycode like browsers, but you probably won't need these buttons in a browser.
+
+Download the pre-built [APK](https://github.com/ClassicOldSong/OnePlusPadProKeyboardLayout/releases/download/v0.0.1/ExKeyMo.Keyboard.Layout.apk)
 
 Enjoy your keyboard!
