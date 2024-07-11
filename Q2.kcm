@@ -32,7 +32,7 @@ map key  99 BUTTON_5           # SCREEN_CAPTURE/SYSRQ
 map key 165 BUTTON_7           # MEDIA_PREVIOUS
 map key 164 BUTTON_8           # MEDIA_PLAY_PAUSE
 map key 163 BUTTON_9           # MEDIA_NEXT
-map key 113 BUTTON_10          # VOLUMT_MUTE
+map key 113 BUTTON_10          # VOLUME_MUTE
 map key 114 BUTTON_11          # VOLUME_DOWN
 map key 115 BUTTON_12          # VOLUME_UP
 map key 111 BUTTON_13          # DELETE
@@ -85,17 +85,17 @@ key BUTTON_9 {
 }
 
 key BUTTON_10 {
-    base:                               fallback VOLUMT_MUTE
+    base:                               fallback VOLUME_MUTE
     ctrl, alt, shift, fn:               fallback F9
 }
 
 key BUTTON_11 {
-    base:                               fallback VOLUMT_DOWN
+    base:                               fallback VOLUME_DOWN
     ctrl, alt, shift, fn:               fallback F10
 }
 
 key BUTTON_12 {
-    base:                               fallback VOLUMT_UP
+    base:                               fallback VOLUME_UP
     ctrl, alt, shift, fn:               fallback F11
 }
 
